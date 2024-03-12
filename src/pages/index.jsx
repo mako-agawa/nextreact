@@ -24,7 +24,7 @@ export default function Home(props) {
       </Head>
       <Header />
 
-      {isShow ? <h1>{count}</h1> : null}
+      {isShow ? <h2>{count}</h2> : null}
       <button onClick={handleDisplay}>{isShow ? "非表示" : "表示"}</button>
 
       <button onClick={handleClick}>ボタン</button>
