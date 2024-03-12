@@ -7,9 +7,10 @@ export function Headline(props) {
         <a href="https://nextjs.org">{props.page} page</a>
       </h1>
       <p className={classes.description}>
-        Get started by editing {props.children}
+        アイテムの数は {props.children} 個です
       </p>
 
+      <button onClick={props.handleReduce}>減らす</button>
 
     </div>
   );
