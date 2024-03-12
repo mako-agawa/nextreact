@@ -6,6 +6,7 @@ import { Header } from "src/components/Header";
 
 export default function About({
   count,
+  doubleCount,
   isShow,
   text,
   array,
@@ -22,7 +23,7 @@ export default function About({
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      {isShow ? <h1>{count}</h1> : null}
+      {isShow ? <h2>{doubleCount}</h2> : null}
       <button onClick={handleDisplay}>{isShow ? "非表示" : "表示"}</button>
       <button onClick={handleClick}>ボタン</button>
       <button onClick={handleAdd}>追加</button>
